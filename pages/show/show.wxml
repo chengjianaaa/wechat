@@ -1,0 +1,16 @@
+<view class="container">
+     <image class="userinfo-avatar" src="../Image/icon_component.png"></image>
+     <text class='userinfo-font' >一款简单的小游戏，听音乐猜歌名</text>
+
+     <view class='userinfo-play'>
+      <text >操作指南</text>
+      <view class='mini'>
+          <text class='mini-font'>听音乐，猜歌名,在选项中选出正确的歌名</text>
+      </view>
+      </view>
+</view>
+
+
+<view>
+  <button class='btn' bindtap='Return'>返回</button>
+</view>

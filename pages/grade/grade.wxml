@@ -1,0 +1,24 @@
+<view class='grade'>
+    <view class='grade-header'>
+      <block wx:if="{{!hasUserInfo}}">
+        <image class='userinfo-avatar' src='../Image/wechat.png'></image>
+        <view class='userinfo-nickname'>加油~~</view>
+      </block>
+      <block wx:else>
+        <image class='userinfo-avatar' src='{{userInfo.avatarUrl}}'></image>
+        <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+      </block>
+  </view>
+  <view class='userinfo-play'>
+      <text>测试题目数:{{gradelist.all}}</text>
+      <view class='mini'>
+          <text class='mini-font'>完成：{{gradelist.total}}</text>
+          <text class='mini-font1'>正确：{{gradelist.score}}</text>
+      </view>
+    </view>
+</view>
+
+<view class='game-btn'>
+<button class='mini-btn'  bindtap='restart'>重新测试</button>
+<button class='mini-btn'  bindtap='returnIndex'>返回首页</button>
+</view>

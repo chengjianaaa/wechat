@@ -1,0 +1,9 @@
+
+<view class="whole">
+     <image class="whole" src="{{imageUrl}}"></image>
+     <view class='index-btn'>
+      <button class='btn' bindtap='Playgame'>开始</button>
+      <button class='btn' bindtap='Show'>说明</button>
+    </view>
+</view>
+

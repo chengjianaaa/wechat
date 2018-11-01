@@ -1,0 +1,95 @@
+page{
+  background-color: #1e3b49;
+  margin: 0;
+  padding: 0;
+}
+.game{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.game-header {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  align-items: center;
+} 
+
+
+
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname{
+  color: #e3e3e3;
+}
+
+.game-body {
+  width: 90%;
+  height: 920rpx;
+  align-items: center;
+  border-radius: 10px;
+  background-color: whitesmoke;
+} 
+
+.audio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top:40rpx;
+  padding-bottom:20rpx;
+  padding-left:5%; 
+
+}
+
+.item-group{
+  width: 98%;
+  padding-left: 1%;
+  border-top:3rpx solid #e3e3e3; 
+  padding-top:10rpx;
+}
+
+.item-cell {
+  color: black;
+  margin: 40rpx ;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:300;
+  font-size: 30rpx;
+  width: 240rpx;
+  height: 260rpx;
+  text-align: center;
+}
+
+.radioimage{
+  width: 240rpx;
+  height: 220rpx;
+  border: 1rpx solid #e3e3e3;
+  align-items: center;
+  border-radius:10rpx; 
+}
+
+
+
+
+
+.mini-btn{
+  float: left;
+  color: white;
+  margin: 20rpx;
+  width: 200rpx;
+  margin-top: 4%;
+}
+
+.clear{
+  clear: both;
+}

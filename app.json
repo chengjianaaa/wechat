@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/mypage/mypage",
+    "pages/logs/logs",
+    "pages/show/show",
+    "pages/game/game",
+    "pages/grade/grade"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1e3b49",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  }
+}

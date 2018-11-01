@@ -1,0 +1,27 @@
+<view class='game'>
+    <view class='game-header'>
+      <block wx:if="{{!hasUserInfo}}">
+        <image class='userinfo-avatar' src='../Image/wechat.png'></image>
+        <view class='userinfo-nickname'>加油~~</view>
+      </block>
+      <block wx:else>
+        <image class='userinfo-avatar' src='{{userInfo.avatarUrl}}'></image>
+        <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    
+    <view class='game-body'>
+      <audio src='{{music[current].audioUrl}}' id="myAudio" controls loop class='audio'></audio>
+      <radio-group bindchange="radioChange" class="item-group">
+        <label class='item-cell' wx:for='{{music[current].items}}' wx:key="{{item.value}}">
+          <image class='radioimage' src='{{item.image}}'></image>
+          <view style='text-align:center;margin-top:10rpx;'> <radio value='{{item.value}}' checked='{{item.checked}}' />{{item.name}}</view>
+        </label>
+      </radio-group>
+    </view>
+    <view class='clear'></view>
+    <view class='game-btn'>
+    <button class='mini-btn' style='background-color: #0066cc;' bindtap='bindNext'>下一题</button>
+    <button class='mini-btn' type='warn' bindtap='bindShowGrade'>显示成绩</button>
+    </view>
+</view>
